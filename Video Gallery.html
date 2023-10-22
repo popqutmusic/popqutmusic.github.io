@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="galleryvideo.css"
+    </head>
+    <body>
+
+        <div class="container">
+
+        <h1>Video Gallery</h1>
+
+        <h2><center>Music Videos</h2></center>
+        <br><br>
+        <div class="video-container">
+            <div class="video"><video src="D:\Websites\Popqut Music\Video Gallery\final.mp4" muted></video></div>
+            <div class="video"><video src="D:\Websites\Popqut Music\Video Gallery\Focal Flare - Eternal.mp4" muted></video></div>
+            <div class="video"><video src="D:\Websites\Popqut Music\Video Gallery\Hypersleeper - No Normalize.mp4" muted></video></div>
+            <div class="video"><video src="D:\Websites\Popqut Music\Video Gallery\0001-0060.mp4" muted></video></div>
+        </div>
+        <br><br>
+        <h2><center>TikTok/IG Reels</h2></center>
+        <br><br>
+            <center><video width="300" height="500" controls><source src="D:\Websites\Popqut Music\Video Gallery\axelboy (finished video).mp4" type="video/mp4"></video>
+            <video width="300" height="500" controls><source src="D:\Websites\Popqut Music\Video Gallery\final (1).mp4" type="video/mp4"></video>
+            <video width="300" height="500" controls><source src="D:\Websites\Popqut Music\Video Gallery\Poster Video.mp4" type="video/mp4"></video>
+        </center>
+        <br><br>
+        <h2><center>Logo Animations</h2></center>
+        <br><br>
+        <div class="video-container">
+            <div class="video"><video src="D:\Websites\Popqut Music\Video Gallery\final (2).mp4" muted></video></div>
+            <div class="video"><video src="D:\Websites\Popqut Music\Video Gallery\logo animation (rough).mp4" muted></video></div>
+            <div class="video"><video src="D:\Websites\Popqut Music\Video Gallery\logo animation.mp4" muted></video></div>
+        </div>
+        <br><br>
+        <div class="popup-video">
+            <span>&times;</span>
+            <video src="D:\Websites\Popqut Music\Video Gallery\0001-0060.mp4" muted autoplay controls></video>
+        </div>
+
+        </div>
+
+        <script>
+
+        document.querySelectorAll('.video-container video').forEach(vid => {
+            vid.onclick = () =>{
+                document.querySelector('.popup-video').style.display = 'block';
+                document.querySelector('.popup-video video').src = vid.getAttribute('src');
+            } 
+        });
+
+        document.querySelector('.popup-video span').onclick = () =>{
+            document.querySelector('.popup-video').style.display = 'none';
+        }
+
+        </script>
+
+    </body>
+</html>
