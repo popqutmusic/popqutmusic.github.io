@@ -88,3 +88,14 @@
         width:95%
     }
 }
+
+button {
+    border-radius: 1em;
+    font-size: 12px;
+    padding: 0.5em 1em;
+    display: absolute;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    cursor: pointer;
+  }

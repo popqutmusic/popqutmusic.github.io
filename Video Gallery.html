@@ -12,8 +12,15 @@
         <div class="container">
 
         <h1>Video Gallery</h1>
-
-        <h2><center>Music Videos</h2></center>
+        <h2><center>TikTok/IG Reel Examples</h2></center>
+        <br><br>
+        <center>
+            <button><a href="https://drive.google.com/file/d/1Vk6afwBq9ONAFcGD6CQJQw3HvlpoA1V5/view?usp=share_link">TikTok/IG Reel Example #1</button></a>
+            <button><a href="https://drive.google.com/file/d/1l-USUWOXuslEm6hEqAlF5GVSiN0bw7BC/view?usp=share_link">TikTok/IG Reel Example #2</button></a>
+            <button><a href="https://drive.google.com/file/d/1Mki1xh4_NWVX1wyuy9rtQ3I2D_RUy-cT/view?usp=share_link">TikTok/IG Reel Example #3</button></a>
+        </center>
+        <br><br>
+        <h2><center>Music Video Examples</h2></center>
         <br><br>
             <center>
                 <iframe src="https://drive.google.com/file/d/1YWqsvpxBK87ZvqEDOPJhhnQKLNutBahx/preview" width="500" height="300" allow="autoplay"></iframe>
@@ -22,17 +29,7 @@
                 <iframe src="https://drive.google.com/file/d/1XpmWF62kEyXC9PzG4FpEegIQ4mbZlDCf/preview" width="500" height="300" allow="autoplay"></iframe>
             </center>
         <br><br>
-        <!--
-        <h2><center>TikTok/IG Reels</h2></center>
-        <br><br>
-            <center>
-                <iframe src="https://drive.google.com/file/d/1Vk6afwBq9ONAFcGD6CQJQw3HvlpoA1V5/preview" width="500" height="500" allow="autoplay"></iframe>
-                <iframe src="https://drive.google.com/file/d/1l-USUWOXuslEm6hEqAlF5GVSiN0bw7BC/preview" width="500" height="500" allow="autoplay"></iframe>
-                <iframe src="https://drive.google.com/file/d/1Mki1xh4_NWVX1wyuy9rtQ3I2D_RUy-cT/preview" width="500" height="500" allow="autoplay"></iframe>
-            </center>
-        <br><br>
-        -->
-        <h2><center>Logo Animations</h2></center>
+        <h2><center>Logo Animation Examples</h2></center>
         <br><br>
             <center>
                 <iframe src="https://drive.google.com/file/d/1DXhvp3paoXHD23p1ev8X9zQruC1gs1om/preview" width="500" height="300" allow="autoplay"></iframe>
@@ -40,21 +37,5 @@
                 <iframe src="https://drive.google.com/file/d/1earxy26EvIaU5_sQCsfe4rD08hdt82jt/preview" width="500" height="300" allow="autoplay"></iframe>
             </center>
         <br><br>
-    
-        <script>
-
-        document.querySelectorAll('.video-container video').forEach(vid => {
-            vid.onclick = () =>{
-                document.querySelector('.popup-video').style.display = 'block';
-                document.querySelector('.popup-video video').src = vid.getAttribute('src');
-            } 
-        });
-
-        document.querySelector('.popup-video span').onclick = () =>{
-            document.querySelector('.popup-video').style.display = 'none';
-        }
-
-        </script>
-
     </body>
 </html>
