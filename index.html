@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
-<head>
-    <!-- Google tag (gtag.js) -->
+    <head>
+        <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-729QVZ8K6G"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -10,16 +9,68 @@
         gtag('js', new Date());
         gtag('config', 'G-729QVZ8K6G');
     </script>
-    <title> MUSIC </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Welcome to Popqut Music</h1>
-    <h2>Check out my work by clicking the button below.</h2>
-    <button class="button button3"><a href="GalleryGatewayPage.html"><b>BEGIN EXPLORING -></b></a></button>
-</div>
-</body>
+        <style>
+            
+        </style>
+        <meta charset="utf-8">
+        <title>Welcome Page</title>
+        <link rel="stylesheet" href="welcomepagestyle.css">
+    </head>
+    <body>
+        <header id="navbar">
+        </div> 
+        <div class="logo">
+            <a href="index.html"><img src="popqutlogo (white).png" alt="Welcome!" style="float:right;width:200px;height:110px;"></a>
+        </div>
+            <div class="dropdown">
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="index.html"><b>HOME</a></li></b>
+                        <li><a href="artistglossary.html"><b>ARTISTS</a></li></b>
+                        <li><a href="GatewayPage.html"><b>CATALOGUE</a></li></b>
+                        <li><a href="Services.html"><b>SERVICES</a></li></b>
+						            <li><a href="Contact Us.html"><b>CONTACT</a></li></b>
+                    </ul>
+        </header>
 
+        <script type="text/javascript" src="vanilla-tilt.js">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+        <script>
+            VanillaTilt.init(document.querySelector(".card"),{
+		max: 25,
+		speed: 400
+	});
 
-</body>
+    let prevScrollPos = window.pageYOffset;
+
+    window.onscroll = function() {
+      let currentScrollPos = window.pageYOffset;
+
+      if (prevScrollPos > currentScrollPos) {
+        document.getElementById("navbar").classList.remove("hidden");
+      } else {
+        document.getElementById("navbar").classList.add("hidden");
+      }
+
+      prevScrollPos = currentScrollPos;
+    };
+
+    // JavaScript to bring back solidity on hover
+    const navbar = document.getElementById('navbar');
+
+    navbar.addEventListener('mouseenter', function() {
+      navbar.classList.remove('hidden');
+    });
+
+    navbar.addEventListener('mouseleave', function() {
+      if (window.scrollY === 0) {
+        navbar.classList.add('hidden');
+      }
+    });
+        </script>
+    </body>
 </html>
