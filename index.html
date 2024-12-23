@@ -1,112 +1,151 @@
-<!doctype html>
-<html>
-    <head>
-        <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-729QVZ8K6G"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-729QVZ8K6G');
-    </script>
-        <style>
-            
-        </style>
-        <meta charset="utf-8">
-        <title>Welcome Page</title>
-        <link rel="stylesheet" href="welcomepagestyle.css">
-    </head>
-    <body>
-        <header id="navbar">
-        </div> 
-        <div class="logo">
-            <a href="index.html"><img src="popqutlogo (white).png" alt="Welcome!" style="float:right;width:200px;height:110px;"></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Popqut Music</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #001f3f; /* Dark blue background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .timeline {
+            max-width: 600px;
+            width: 100%;
+            border-left: 3px solid #ffffff;
+            padding: 20px;
+            position: relative;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+        .event {
+            margin-bottom: 40px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .event:before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            left: -9px;
+            top: 5px;
+        }
+        .year {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 560px;
+            aspect-ratio: 16 / 9;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .button-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+        }
+        .portfolio-button, .all-links-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            color: #ffffff;
+            border: none;
+        }
+        .portfolio-button {
+            background-color: #007bff; /* Blue button */
+        }
+        .portfolio-button:hover {
+            background-color: #0056b3;
+        }
+        .all-links-button {
+            background-color: #ffcc00; /* Yellow button */
+            color: #333333;
+        }
+        .all-links-button:hover {
+            background-color: #e6b800;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            text-align: center;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="popqutlogo (white).png" alt="Your Logo" width="300" height="150">
+    </div>
+    <h1>Timeline</h1>
+    <div class="timeline">
+        <div class="event">
+            <div class="year">2022</div>
+            <div class="description">
+                Worked with <strong>Andover</strong> to create a music video that captured their vision and creativity.
+            </div>
+            <div class="video-container">
+                <a href="https://youtu.be/OfP37ND4wRs" target="_blank">
+                    <img src="AndoverVideoThumbnail.png" alt="Watch the 2024 Video" width="560" height="315">
+                </a>
+            </div>
         </div>
-            <div class="dropdown">
-                <div class="dropdown-content">
-                    <ul>
-                        <li><a href="index.html"><b>HOME</a></li></b>
-                        <li><a href="artistglossary.html"><b>ARTISTS</a></li></b>
-                        <li><a href="GatewayPage.html"><b>CATALOGUE</a></li></b>
-                        <li><a href="Services.html"><b>SERVICES</a></li></b>
-						            <li><a href="Contact Us.html"><b>CONTACT</a></li></b>
-                    </ul>
-        </header>
-
-        <center>
-          <h1>Down here visitor!</h1>
-          <p>
-            Welcome to the website for Popqut Music! In case you're wondering, we are an early stage
-            <br>
-            agency focused on helping artists and content creators alike with repurposing their brand
-            <br>
-            by providing unique content in the form of music videos, posters, social media content, and
-            <br>
-            even product concepts that can attract greater audiences at the chance of bigger popularity.
-            <br><br>
-            If you'd like to see what we've been up to, you can visit our Catalogue page or even check out
-            <br>
-            our Artists page to see the kind of work we've done in the past.
-            <br><br>
-            Look as much as you like! If you see something that makes you want to work with us, please let us
-            <br>
-            know through our contact information on the Contact Us page.
-          </p>
-          <br><br><br><br>
-
-          <h1>Current Client</h1>
-          <h2>Digital Anomaly</h2>
-          <br>
-          <p>
-            As of early 2023, DJ and producer Digital Anomaly is under our
-            <br>
-            belt. Thus far, we have helped him craft a music video for his
-            <br>
-            upcoming track 'Scroll Down'! If you want to keep up with his
-            <br>
-            most recent work, check out his Audius page: https://audius.co/digitaloutcast
-            <br>
-          </p>
-        </center>
-
-        <script type="text/javascript" src="vanilla-tilt.js">
-            window.addEventListener("scroll", function(){
-                var header = document.querySelector("header");
-                header.classList.toggle("sticky", window.scrollY > 0);
-            })
-        </script>
-        <script>
-            VanillaTilt.init(document.querySelector(".card"),{
-		max: 25,
-		speed: 400
-	});
-
-    let prevScrollPos = window.pageYOffset;
-
-    window.onscroll = function() {
-      let currentScrollPos = window.pageYOffset;
-
-      if (prevScrollPos > currentScrollPos) {
-        document.getElementById("navbar").classList.remove("hidden");
-      } else {
-        document.getElementById("navbar").classList.add("hidden");
-      }
-
-      prevScrollPos = currentScrollPos;
-    };
-
-    // JavaScript to bring back solidity on hover
-    const navbar = document.getElementById('navbar');
-
-    navbar.addEventListener('mouseenter', function() {
-      navbar.classList.remove('hidden');
-    });
-
-    navbar.addEventListener('mouseleave', function() {
-      if (window.scrollY === 0) {
-        navbar.classList.add('hidden');
-      }
-    });
-        </script>
-    </body>
+        <div class="event">
+            <div class="year">2024</div>
+            <div class="description">
+                Transitioning to a new phase by focusing on <strong>Destination Home</strong>. 
+                For a temporary period, <strong>Popqut Music</strong> will fuse with <strong>Destination Home</strong> 
+                to create innovative and meaningful content.
+            </div>
+            <div class="video-container">
+                <a href="https://www.youtube.com/watch?v=ERJmf7yQfSc" target="_blank">
+                    <img src="2024RecapThumbnail.png" alt="Watch the 2024 Video" width="560" height="315">
+                </a>
+            </div>      
+    </div>
+    
+    <div class="button-container">
+        <a href="https://linktr.ee/popqutmusic" class="all-links-button">All Links</a>
+        <a href="GatewayPage.html" class="portfolio-button">Portfolio</a>
+    </div>
+    <footer>
+        © 2025 Popqut Media
+    </footer>
+</body>
 </html>
